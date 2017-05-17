@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#deb887"
+            android:text="Nhập tên:" />
+
+		 <EditText
+           android:id="@+id/txtTen"
+ 		   android:layout_width="wrap_content"
+ 		   android:layout_height="wrap_content"
+ 	  	   android:layout_alignParentTop="true"
+ 		   android:inputType="text"
+		   android:layout_toRightOf="@+id/textView1"
+ 		   android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txtTen"
+            android:layout_below="@+id/txtTen"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Nhập"
+            android:textAlignment="center" />
+            
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtselection"
+ 			android:layout_width="match_parent"
+		 	android:layout_height="wrap_content"
+ 			android:layout_alignParentLeft="true"
+ 			android:layout_below="@+id/btnNhap"
+ 			android:background="#007380" />
+            
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/lvperson"
+ 			android:layout_width="match_parent"
+ 			android:layout_height="wrap_content"
+	 		android:layout_alignParentLeft="true"
+ 			android:layout_below="@+id/txtselection"
+ 			android:background="#cccccc" >
+            
+        </ListView>
+	</LinearLayout>
+</LinearLayout>
